@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        html ,body{
+            height: 100%;
+            width: 100%;
+            margin: 0px;
+            background-color: antiquewhite;
+            overflow: hidden;
+        }
+        .flaot-container::after{
+            content: '';
+            display: block;
+            clear: both;
+        }
+        .float-container{
+            height: 100%;
+            width: 100%;
+            padding-left: 10px;
+            padding-right: 10px;
+            font-size: 1.5em;
+        }
+        .float-left{
+            float: left;
+        }
+        .float-right{
+            float: right;
+        }
+        .middel{
+            text-align: center;
+        }
+        .tools{
+            margin-top: 10px;
+        }
+        .tool-box{
+            margin-left: 30%;
+            margin-right: 30%;
+        }
+        table , tbody , tr ,td , th {
+            border: 1px solid black;
+        }
+        table{
+            width: 100%;
+        }
+        .container{
+            margin-top: 10px;
+            padding-left: 10px;
+            padding-right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="top" >
+        <div class="float-container">
+            <span class="flaot-left">Login as admin</span>
+        </div>
+    </div>
+    <div class="middel container">
+        <div id="addbus">
+            
+            <h1>ADD BUS</h1>
+    
+            <div class="tool-box">
+                <hr>
+                <div class="tools">
+                    <input type="text" placeholder="Enter Bus Number" required>
+                </div>
+                <div class="tools">
+                    <input type="text" placeholder="From" required>
+                </div>
+                <div class="tools">
+                    <input type="text" placeholder="To" required>
+                    <br>
+                    <span class="msg"></span>
+                </div>
+                <div class="tools">
+                    <button>ADD</button>
+                </div>
+                <br>
+                <HR></HR>
+            </div>
+        </div>
+        <div id="removebus">
+            <h1>REMOVE BUS</h1>
+            <div class="tool-box">
+                <div class="tools">
+                    <input type="text" placeholder="Enter Bus Number">
+                    <br>
+                    <span class="msg"></span>
+                </div>
+                <div class="tools">
+                    <button>Remove</button>
+                </div>
+                <br>
+                <hr>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./img/Admin.js"></script>
+</html>

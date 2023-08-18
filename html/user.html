@@ -1,0 +1,129 @@
+<doctype>
+<html>
+<style>
+  
+  body {
+  background-image: url("../img/wal.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+ h1{
+  color : rgb(195, 104, 104);
+ }
+ p{
+ color : green;
+ }
+ #customer_details{
+	font-size: 25px;
+ }
+ #bus{
+	font-size: 40px;
+ }
+ #back{
+
+	background-color: rgb(202, 216, 216);
+	border-radius: 19px;
+	font-size: 35px;
+ }
+ .conform,.reset{
+	        height:45px;
+			width:100px;
+			border:0px;
+			background-color:rgb(190, 190, 151);
+			border-radius: 50px;
+			font-size: 15px;
+			border: 2px solid #a10cec; 
+			cursor:pointer;
+ }
+ .conform:hover{
+          color:rgb(15, 11, 232);		  
+		  background-color:rgba(190, 8, 246, 0.11);
+		   transition-duration:0.4s;
+		 }
+.reset:hover{
+          color:rgb(25, 120, 228);		  
+		  background-color:rgba(190, 8, 246, 0.11);
+		   transition-duration:0.4s;
+		 }
+.c1{
+	border-radius: 8px;
+	height: 30px;
+	width: 280px;
+	color: rgb(167, 106, 106);
+	font-size: large;
+}
+		 
+</style>
+
+ <head>
+ <title> Bus Reservation </title>
+ </head>
+	<body>
+	
+	<button id="back"> <a href="../html/home.html">	&laquo; </a></a></button>
+	<h1 id="bus">  <center><ins> <B>BUS RESERVATION </ins></h1>
+		<form action="../php/user.php" method="post">
+		   <fieldset>
+              <legend id="customer_details"> <img src="../img/passanger-deatails.png" width="50" height="50"> <ins>PASSANGER DETAILS</ins></legend>
+			<p>
+                <label><center>FIRST NAME: <br> <br>  <input class="c1" type="text" name="name" required/></label>
+     
+			<p>       </p>
+				<label> <center>MIDDILE NAME :<br><br><input class="c1" type="text" name="middile"/><label>
+			</p>
+			 <p>
+                <label><center> LAST NAME :  <br>  <br>  <input class="c1" name="last" type="text" required /></label>
+            </p>
+			<p>
+				<label><center> EMAIL ID  : <br><br>	<input class="c1" type="EMAIL"  name="email"/> </label>
+				</p>
+			<p> 
+			<label> <center>MOBILE NUMBER : <br>  <br> <input class="c1" type="number" name="mobile_no" required /> <label> 
+			<br>	<br>
+			<label>ADHAR NUMBER  :  <br> <br> <input class="c1" type="number" name="adhar" required /> </label>
+			</p>
+			<p> 
+				<br>
+				Address :
+				<textarea class="c1" data="address" col="5" rows="3" name="address"> </textarea> <br><br>
+				<label> PIN_NUMBER : <input class="c1" type="number" name="pin" /> <label> 
+				<br> <br><br>
+				<label> From : <input class="c1 from" type="text" name="source" required> <b>==>></b>  
+					      To : <input class="c1 to" type="text" name="destination" required/>  <label>
+				<br><br>
+				<span class="msg"></span><br><br>
+					Date : <input class="c1" type="date" name="Time1" required> <br> <br>
+					Bus-Timing <select class="c1" name="Timing" id="arrival" required>
+						<option value="">None</option>
+						<option value="8:26 Am">8:26 Am</option>
+						<option value="11:57 Am">11:57 Am</option>
+						<option value="04:00 Pm">04:00 Pm</option>
+						<option value="09:17 Pm">09:17 Pm</option>
+						<option value="10:05 Pm">10:05 Pm</option>
+					</select>
+			</p>
+			<fieldset>
+				<legend>GENDER : </legend>
+				<select id="gender">
+					<option value="MALE">MALE</option>
+					<option value="FEMALE">FEMALE</option>
+					<option value="OTHER">OTHER</option>
+				</select>
+				
+				</fieldset>
+			<p class="citizen"> Select Citizen : <br><br>	
+					<label> Indian :<input type="radio" name="citizen" value="indian"  /> </label>
+					<label> Other  :<input type="radio" name="citizen"  value="Other"/></label>
+					<select id="other" > 
+					  <textarea data="address" col="" rows="1"> </textarea>
+					</p>
+					<br>
+			<button type="submit" class="conform" >Book Now</button> 
+				<button type="reset" class="reset" >Reset </button> <br><br>
+				<center> 	<button ><a href="../html/home.html">Home</a> </button></center>
+
+			  </fieldset>
+	</body>
+	<script src="../javascript/user.js"></script>
+ <html>

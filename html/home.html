@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+     <title>home</title>
+	 
+	 <style>
+	    html , body{
+		    height:100%;
+			width:100%;
+			margin:0px;
+			background-color:lightblue;
+		}
+		/*body{
+		   background-image:url(background.png);
+		   background-size:100% 100%;
+		   background-repeat:no-repeat;
+		}*/
+		*{
+		     box-sizing:border-box;
+		 }
+		 
+		 .option{
+		   margin:0px;
+		   margin-left:10px;
+		   padding-left:10px;
+		    padding-right:10px;
+			
+		 }
+		 .option:hover{
+		   background-color:GREEN;
+		   transition-duration:0.4s;
+		   cursor:pointer;
+		 }
+		 .container{
+		     margin-top:100px;
+			  margin-bottom:100px;
+			  border-radius: 20px;
+	
+		 }
+		 .form{
+		     margin-left:25%;
+			 margin-right:25%;
+			 padding:10px;
+			 font-size:1.5em;
+			 background-color:rgb(193, 193, 231);
+			 border-radius: 40px;
+		 }
+		 .form:hover{
+		   box-shadow:10px 10px rgba(125,125,125,0.5);
+		   transition-duration:0.3s;
+		 }
+		 .input{
+		   font-size:20px;
+		   color:rgb(114, 62, 237);
+		   height:auto;
+		   width:100%;
+		   padding:10px;
+		   margin:10px;
+		   border-radius:50px;
+		   background-color:lightgray;
+		 }
+		 .button{
+		    height:40px;
+			width:100px;
+			border:0px;
+			background-color:rgb(190, 190, 151);
+			border-radius: 50px;
+			font-size: 24px;
+			border: 2px solid #a10cec; 
+			cursor:pointer;
+		 }
+		 .button:hover{
+          color:white;		  
+		  background-color:gray;
+		   transition-duration:0.4s;
+		 }
+		 #button_SignUp{
+			height:45px;
+			width:100px;
+			border:0px;
+			background-color:rgb(190, 190, 151);
+			border-radius: 50px;
+			font-size: 15px;
+			border: 2px solid #a10cec; 
+			cursor:pointer;
+		 }
+		 /* @media screen and (max-width:480px)
+		 {
+		     .option{
+			    display:block;
+				margin:0px;
+				padding-left:20%;
+				padding-right:20%;
+			 }
+			 .menubar{
+			   display:block;
+			 }
+		 } */
+
+		 #tupple {
+            font-size: 50px;
+            color: rgb(227, 73, 73);			
+			position: sticky;
+            height:0px;
+            width: 100%;
+			top: 0px;
+			left: 0px;
+        }
+		.menubar{
+            position:sticky;
+			top:0px;
+			display:flex;		   
+		    height:auto;
+            width:100%;	
+            font-size:2em;
+            background-color:rgb(0, 0, 0);
+            color:white;	
+			border-radius: 20px;		
+		 } 
+	 </style>
+
+  </head>
+  <body>
+
+<!-- it containg the data like -->
+	
+<form action="../php/home.php" method="post">
+
+
+	 <div class="head">
+        <h1 id="tupple">
+            <marquee bgcolor="rgb(1,10,250)" width="100%" direction="left">
+			<img src="../img/bus.png" width="120" height="55" alt="Natural" />
+                <b> <em><ins>Bus Reservation System </ins></em>
+					<img src="../img/bus.png" width="120" height="55" alt="Natural" />	
+				<br> 
+				</b>
+            </marquee>
+        </h1>
+    </div>
+
+	<br><br>
+	
+	 <div class = 'menubar' >
+		<!-- <p class = 'option' ><a href="login.html">Admin </a></p> -->
+		<p class = 'option' > <a href="../html/home.html">||_Passanger-Details_||</a></p>
+		<p class = 'option' ><a href="../html/user.html">_Bus-Registration__||</a></p>
+		<p class = 'option'><a href="../html/cancel.html">Ticket_Cancel</a> </p>
+		<p class = 'option'><a href="../html/contect.html">||_Contect_||</a> </p>
+		<p class = 'option'><a href="../html/help.html">_About_As_</a></p>
+	 </div> 
+
+	 <div class = 'container' >
+	     <div class = 'form' >
+		 <h1><img src="../img/Search_Bus.png" height="60" width="60" alt="Natural"><ins>Search Ticket </ins> </h1>
+		 <img src="../img/bus-stop.png" height="40" width="40" alt="Natural"> From:<input class = 'input' type = 'text' name = "source" placeholder="From" required >
+			 <br /><br />
+			 <img src="../img/destination.png" height="30" width="30" alt="Natural">
+			 To:<input class = 'input' type = 'text' name = "destination" placeholder="To" required>
+			 <br /><br/>
+			 <img src="../img/tickets.png" height="30" width="30" alt="Natural">
+			 PNR:<input class = 'input' type = 'text' name="Ticket_Number" placeholder="Ticket No." required>
+			 <br /><br/>
+			 <img src="../img/schedule.png" height="30" width="30" alt="Natural">
+			 Date:<input class = 'input' type = 'date' name = "Time1" >
+			 <br /><br /><br /><br />
+			 <!-- <input class = 'button' type = 'button' value = "Search" > -->
+			 <button type="submit" class="button" >Submit</button>
+		 </div>
+
+	 </div>
+
+	 <!-- <div class = 'container' >
+	    <div class = 'form' >
+		  <input class = 'button' type = 'button' value = 'Status Check' >
+		</div>
+	 </div> -->
+
+		</form>
+
+		<!-- FORM - PART here allowing the body  -->
+
+  </body>
+</html>

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>log-in</title></head>
+<style>
+    .input{
+        border-radius: 20px;
+        color: rgb(217, 4, 4);
+    }
+div{
+    height: 400px;
+    width: 30%;
+    background-color: rgba(116, 255, 246, 0.633);
+   vertical-align: baseline;
+   border-radius: 50px;
+   margin-top: 120px;
+   margin-left: 0px;
+    opacity: .9;
+   
+}
+.Varientation{
+    font-size: 33px;
+}
+.Log-in-button{
+          color:rgb(40, 9, 239);	  
+		  background-color:rgba(190, 8, 246, 0.11);
+           border-radius: 9px;
+           border-color: rgba(235, 252, 255, 0.927);
+           height: 30px;
+           width: 70px;
+           font-size: 16px;
+}
+.create{
+         color:rgb(40, 9, 239);		  
+		  background-color:rgba(190, 8, 246, 0.11);
+           border-radius: 9px;
+           border-color: rgba(235, 252, 255, 0.927);
+           height: 30px;
+           width: 70px;
+           font-size: 15px;
+}
+#BODY{
+    background-image: url("../img/w7.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(164, 207, 244);
+  
+  /* filter: blur(10px);
+  -webkit-filter: blur(11px); */
+}
+.user{
+    height: 120px;
+    width: 120px;
+    
+}
+#id{
+    filter: alpha(opacity=60);
+    background-color:rgb(208, 198, 169);
+}
+.input{
+    background-color: rgba(179, 247, 247, 0.633);
+    border-color: aqua;
+    height: 27px;
+    width: 200px;
+    font-style: italic;
+}
+.input1{
+    background-color: rgba(179, 247, 247, 0.633);
+    border-color: aqua;
+    height: 27px;
+    width: 410px;
+    border-radius: 15px;
+    font-style: italic;
+}
+.input_box_upper{
+    height: 25px;
+    width: 25px;
+}
+.user_Text{
+    font-size: 15px;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+forget_Password{
+    font-size: 1px;
+}
+
+#heading{
+    font-style: italic;
+}
+</style>
+<body id="BODY">
+<center>
+    <div>
+    <form action="../php/sign_up.php" method="post">
+       <h1 id="heading">Sign-Up</h1>            <hr>
+       <input  type="text" class="input" placeholder="  First Name"  name="fname" required>
+       <input  type="text" class="input" placeholder="  Last Name" name="lname" required><br><br>
+       <input  type="email" class="input1" placeholder="  Email" name="email" required><br><br>
+       <input  type="password" class="input1" placeholder="  Password" name="pass" required><br><br>
+       <input  type="password" class="input1" placeholder="  Conform Password" name="cpass"  required><br><br>
+       <input  type="number" class="input1" placeholder="  Mobile No." name="mobile_no" required><br><br>
+     
+       <button class="create" type="submit"><a href="./html/.html/login.html">Back</a></button>
+        <button class="create" type="submit">Create</button>
+        
+    </form>
+
+</div>
+</center>
+</body>
+
+</html>

@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>log-in</title></head>
+<style>
+    .input{
+        border-radius: 20px;
+        color: rgb(217, 4, 4);
+    }
+div{
+    height: 400px;
+    width: 30%;
+    background-color: rgba(116, 255, 246, 0.633);
+   vertical-align: baseline;
+   border-radius: 50px;
+   margin-top: 120px;
+   margin-left: 0px;
+    opacity: .9;
+   
+}
+.Varientation{
+    font-size: 33px;
+}
+.Log-in-button{
+          color:rgb(40, 9, 239);	  
+		  background-color:rgba(190, 8, 246, 0.11);
+           border-radius: 9px;
+           border-color: rgba(235, 252, 255, 0.927);
+           height: 30px;
+           width: 70px;
+           font-size: 16px;
+}
+.Sign-up-button{
+         color:rgb(40, 9, 239);		  
+		  background-color:rgba(190, 8, 246, 0.11);
+           border-radius: 9px;
+           border-color: rgba(235, 252, 255, 0.927);
+           height: 30px;
+           width: 70px;
+           font-size: 15px;
+}
+#BODY{
+    background-image: url("../img/w7.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-color: rgb(164, 207, 244);
+  
+  /* filter: blur(10px);
+  -webkit-filter: blur(11px); */
+}
+.user{
+    height: 120px;
+    width: 120px;
+    
+}
+#id{
+    filter: alpha(opacity=60);
+    background-color:rgb(208, 198, 169);
+}
+.input{
+    background-color: rgba(179, 247, 247, 0.633);
+    border-color: aqua;
+    height: 27px;
+    width: 200px;
+}
+.input_box_upper{
+    height: 25px;
+    width: 25px;
+}
+.user_Text{
+    font-size: 15px;
+    margin-top: 100px;
+    margin-right: 100px;
+}
+forget_Password{
+    font-size: 1px;
+}
+
+</style>
+<body id="BODY">
+<center>
+    <div>
+    <form action="../php/login.php" method="post">
+       <img src="../img/team.png" alt="Natural" class="user"><br><hr>
+       <img src="../img/i-user.png" alt="" class="input_box_upper"> <b class="user_Text"> User-id</b><br>
+
+        <!-- // input - 1  -->
+       <input type="text" class="input" placeholder="User Id" name="id" required>   <br><br>
+
+       <img src="../img/lock1.png" alt="" class="input_box_upper"> <b class="user_Text">Password</b><br>
+        
+        <!--   // input - 2 -->
+
+       <input type="password" class="input" placeholder="Password" name="pass" required>   <br><br>
+
+
+       <!-- <a href="foget_pass" id="forget_Password">~forget Password</a><br> -->
+       <br>
+        <button class="Log-in-button" type="submit">Log-in</button>
+        <button class="Sign-up-button"><a href="../html/index.html">Sign-up</a></button>
+        
+    </form>
+
+</div>
+</center>
+</body>
+
+</html>

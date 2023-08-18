@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head><title>Cancel Ticket</title></head>
+<style>
+    .input{
+        border-radius: 20px;
+        color: rgb(217, 4, 4);
+        height: 20px;
+        width: 180px;
+        background-color: rgb(129, 228, 228);
+        border-color: aqua;
+    }
+div{
+    height: 600px;
+    width: 50%;
+    background-color: rgba(11, 224, 224, 0.633);
+   vertical-align: baseline;
+   border-radius: 33px;
+}
+.Varientation{
+    font-size: 39px;
+}
+.button{
+          color:rgb(150, 239, 136);		  
+		  background-color:rgba(190, 8, 246, 0.11);
+           border-radius: 9px;
+           border-color: rgb(241, 248, 241);
+           height: 40px;
+           width: 90px;
+           font-size: 16px;
+}
+#BODY{
+    background-color: blue;
+}
+.indecation{
+    font-size: 23px;
+    font-style:italic;
+}
+</style>
+<body id="BODY">
+    <center>
+    <div>
+    <form action="../php/cancel.php" method="post">
+        <center>
+        <p class="Varientation">................Ticket Cancellation................</p>
+        <hr> <b class="indecation"> From </b><br><br> <input class="input" type="text" name="source" placeholder="  From" required> <br><br>  <hr>  <hr>
+        <b class="indecation">Destination </b>  <br><br>   <input class="input" type="text" name="destination" placeholder="  To" required><br><br>  <hr>  <hr>
+        <b class="indecation"> Ticket_Number </b><br><br> <input class="input" type="number" name="Ticket_Number" placeholder="  Ticket_No." required>  <hr>  <hr>
+       <b class="indecation"> Timing</b><br><br> <select  class="input" name="Timing" id="samay"  required>
+            <option value="">None</option>
+            <option value="8:26 Am">8:26 Am</option>
+            <option value="11:57 Am">11:57 Am</option>
+            <option value="04:00 Pm">04:00 Pm</option>
+            <option value="09:17 Pm">09:17 Pm</option>
+			<option value="10:05 Pm">10:05 Pm</option>
+        </select>
+        <hr><hr><br>
+        <button class="button" type="submit"><a href="../html/home.html">Back</a></button>
+        <button class="button" type="submit">Conform</button>
+    </center>
+        
+    </form>
+</div>
+</center>
+</body>
+
+</html>
